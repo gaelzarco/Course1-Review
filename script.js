@@ -57,3 +57,21 @@ fishVoteBtn.addEventListener('click', function (e) {
 })
 
 animals[2].append(fishVoteBtn)
+
+let favoriteAnimal = document.querySelectorAll('.voting-table')
+
+let favoriteAnimalBtn = document.createElement('button')
+favoriteAnimalBtn.textContent = "Favorite animal!"
+
+favoriteAnimalBtn.addEventListener('click', function(e) {
+    let favoriteAnimalCount = parseInt(favoriteAnimal.textContent)
+    for (let i = 0; i < favoriteAnimal.length; i++) {
+        if (favoriteAnimalCount[i] > favoriteAnimalCount[i]) {
+            favoriteAnimalCount[i] = favoriteAnimal
+        }
+    } window.alert ('and the favorite animal is:',favoriteAnimal)
+    console.log(favoriteAnimalCount)
+    console.log(favoriteAnimal)   
+})
+
+document.body.append(favoriteAnimalBtn)
